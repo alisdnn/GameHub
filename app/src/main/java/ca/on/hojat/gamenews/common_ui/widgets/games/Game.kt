@@ -114,7 +114,11 @@ private fun DetailsDescription(description: String) {
                 val textHeight = textLayoutResult.size.height
                 val firstLineHeight = textLayoutResult.multiParagraph.getLineHeight(0)
 
-                maxLines = (textHeight / firstLineHeight).roundToInt()
+                (textHeight / firstLineHeight).roundToInt().let { calculatedMaxLines ->
+                    if (calculatedMaxLines > 0)
+                        maxLines = calculatedMaxLines
+                }
+
             }
         },
         style = GameHubTheme.typography.body2.copy(
