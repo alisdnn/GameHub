@@ -14,7 +14,7 @@ import androidx.compose.animation.scaleOut
 sealed interface TransitionAnimations {
 
     companion object {
-        const val DefaultAnimationDuration = 300
+        const val DEFAULT_ANIMATION_DURATION = 300
     }
 
     fun enter(): EnterTransition
@@ -28,7 +28,7 @@ object Fading : TransitionAnimations {
     override fun enter(): EnterTransition {
         return fadeIn(
             animationSpec = tween(
-                durationMillis = TransitionAnimations.DefaultAnimationDuration,
+                durationMillis = TransitionAnimations.DEFAULT_ANIMATION_DURATION,
                 easing = LinearEasing,
             ),
         )
@@ -37,7 +37,7 @@ object Fading : TransitionAnimations {
     override fun exit(): ExitTransition {
         return fadeOut(
             animationSpec = tween(
-                durationMillis = TransitionAnimations.DefaultAnimationDuration,
+                durationMillis = TransitionAnimations.DEFAULT_ANIMATION_DURATION,
                 easing = LinearEasing,
             ),
         )
@@ -54,77 +54,77 @@ object Fading : TransitionAnimations {
 
 object OvershootScaling : TransitionAnimations {
 
-    private const val FadingAnimationDuration = 100
+    private const val FADING_ANIMATION_DURATION = 100
 
-    private const val MinScale = 0.9f
-    private const val MaxScale = 1.1f
+    private const val MIN_SCALE = 0.9f
+    private const val MAX_SCALE = 1.1f
 
-    private const val MinAlpha = 0f
-    private const val MaxAlpha = 0.9f
+    private const val MIN_ALPHA = 0f
+    private const val MAX_ALPHA = 0.9f
 
     private val overshootInterpolator = OvershootInterpolator()
 
     override fun enter(): EnterTransition {
         return scaleIn(
             animationSpec = tween(
-                durationMillis = TransitionAnimations.DefaultAnimationDuration,
+                durationMillis = TransitionAnimations.DEFAULT_ANIMATION_DURATION,
                 easing = Easing(overshootInterpolator::getInterpolation),
             ),
-            initialScale = MaxScale,
+            initialScale = MAX_SCALE,
         ) + fadeIn(
             animationSpec = tween(
-                durationMillis = FadingAnimationDuration,
+                durationMillis = FADING_ANIMATION_DURATION,
                 easing = LinearEasing,
             ),
-            initialAlpha = MaxAlpha,
+            initialAlpha = MAX_ALPHA,
         )
     }
 
     override fun exit(): ExitTransition {
         return scaleOut(
             animationSpec = tween(
-                durationMillis = TransitionAnimations.DefaultAnimationDuration,
+                durationMillis = TransitionAnimations.DEFAULT_ANIMATION_DURATION,
                 easing = Easing(overshootInterpolator::getInterpolation),
             ),
-            targetScale = MinScale,
+            targetScale = MIN_SCALE,
         ) + fadeOut(
             animationSpec = tween(
-                durationMillis = FadingAnimationDuration,
+                durationMillis = FADING_ANIMATION_DURATION,
                 easing = LinearEasing,
             ),
-            targetAlpha = MaxAlpha,
+            targetAlpha = MAX_ALPHA,
         )
     }
 
     override fun popEnter(): EnterTransition {
         return scaleIn(
             animationSpec = tween(
-                durationMillis = TransitionAnimations.DefaultAnimationDuration,
+                durationMillis = TransitionAnimations.DEFAULT_ANIMATION_DURATION,
                 easing = Easing(overshootInterpolator::getInterpolation),
             ),
-            initialScale = MinScale,
+            initialScale = MIN_SCALE,
         ) + fadeIn(
             animationSpec = tween(
-                durationMillis = FadingAnimationDuration,
+                durationMillis = FADING_ANIMATION_DURATION,
                 easing = LinearEasing,
             ),
-            initialAlpha = MaxAlpha,
+            initialAlpha = MAX_ALPHA,
         )
     }
 
     override fun popExit(): ExitTransition {
         return scaleOut(
             animationSpec = tween(
-                durationMillis = TransitionAnimations.DefaultAnimationDuration,
+                durationMillis = TransitionAnimations.DEFAULT_ANIMATION_DURATION,
                 easing = Easing(overshootInterpolator::getInterpolation),
             ),
-            targetScale = MaxScale,
+            targetScale = MAX_SCALE,
         ) + fadeOut(
             animationSpec = tween(
-                durationMillis = FadingAnimationDuration,
+                durationMillis = FADING_ANIMATION_DURATION,
                 easing = LinearEasing,
             ),
-            targetAlpha = MinAlpha,
+            targetAlpha = MIN_ALPHA,
         )
     }
 }
