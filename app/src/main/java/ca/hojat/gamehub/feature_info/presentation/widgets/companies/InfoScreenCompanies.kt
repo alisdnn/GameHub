@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.GameHubCard
 import ca.hojat.gamehub.common_ui.images.secondaryImage
 import ca.hojat.gamehub.core.extensions.centerX

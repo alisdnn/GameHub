@@ -1,7 +1,7 @@
 package ca.hojat.gamehub.feature_likes.presentation
 
 import androidx.lifecycle.viewModelScope
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.games.GameUiModel
 import ca.hojat.gamehub.common_ui.widgets.games.GameUiModelMapper
 import ca.hojat.gamehub.common_ui.widgets.games.GamesUiState

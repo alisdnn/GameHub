@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.feature_info.presentation.widgets.videos
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.providers.StringProvider
 import ca.hojat.gamehub.core.factories.YoutubeMediaUrlFactory
 import ca.hojat.gamehub.core.factories.YoutubeThumbnailSize

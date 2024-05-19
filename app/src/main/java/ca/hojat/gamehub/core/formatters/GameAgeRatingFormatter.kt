@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.core.formatters
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.domain.entities.AgeRatingCategory
 import ca.hojat.gamehub.core.domain.entities.AgeRatingType
 import ca.hojat.gamehub.core.domain.entities.Game

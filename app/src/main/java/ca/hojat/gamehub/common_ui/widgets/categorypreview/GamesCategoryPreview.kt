@@ -24,7 +24,7 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.ConstraintLayoutBaseScope
 import androidx.constraintlayout.compose.ConstraintLayoutScope
 import androidx.constraintlayout.compose.Dimension
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.GameCover
 import ca.hojat.gamehub.common_ui.widgets.GameHubCard
 import ca.hojat.gamehub.common_ui.widgets.GameNewsProgressIndicator

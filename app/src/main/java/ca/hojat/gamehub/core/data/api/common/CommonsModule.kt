@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.core.data.api.common
 
-import ca.on.hojat.gamenews.BuildConfig
+import ca.hojat.gamehub.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

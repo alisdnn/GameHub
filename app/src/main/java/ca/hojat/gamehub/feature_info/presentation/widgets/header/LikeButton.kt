@@ -12,7 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.clickable
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
 import com.airbnb.lottie.compose.LottieAnimatable

@@ -25,7 +25,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.feature_info.presentation.widgets.utils.InfoScreenSection
 
 private const val AnimationDuration = 300

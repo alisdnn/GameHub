@@ -19,7 +19,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.images.defaultImageRequest
 import ca.hojat.gamehub.common_ui.images.secondaryImage
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme

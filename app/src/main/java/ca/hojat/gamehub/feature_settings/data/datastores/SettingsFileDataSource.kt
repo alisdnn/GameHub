@@ -1,7 +1,7 @@
 package ca.hojat.gamehub.feature_settings.data.datastores
 
 import androidx.datastore.core.DataStore
-import ca.on.hojat.gamenews.feature_settings.data.datastores.ProtoSettings
+import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettings
 import ca.hojat.gamehub.feature_settings.domain.datastores.SettingsLocalDataSource
 import ca.hojat.gamehub.feature_settings.domain.entities.Settings
 import com.paulrybitskyi.hiltbinder.BindType

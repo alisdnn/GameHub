@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.theme.subtitle3
 import ca.hojat.gamehub.feature_info.presentation.widgets.utils.InfoScreenSection
 

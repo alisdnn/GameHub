@@ -29,7 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
 import ca.hojat.gamehub.common_ui.theme.subtitle3
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.CommandsHandler
 import ca.hojat.gamehub.common_ui.LocalUrlOpener
 import ca.hojat.gamehub.common_ui.NavBarColorHandler

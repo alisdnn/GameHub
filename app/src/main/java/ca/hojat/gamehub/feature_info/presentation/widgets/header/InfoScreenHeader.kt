@@ -38,7 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.ConstraintSet
 import androidx.constraintlayout.compose.Dimension
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.clickable
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
 import ca.hojat.gamehub.common_ui.theme.lightScrim

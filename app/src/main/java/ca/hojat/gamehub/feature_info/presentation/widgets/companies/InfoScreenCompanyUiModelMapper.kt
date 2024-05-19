@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.feature_info.presentation.widgets.companies
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.providers.StringProvider
 import ca.hojat.gamehub.core.factories.IgdbImageExtension
 import ca.hojat.gamehub.core.factories.IgdbImageSize

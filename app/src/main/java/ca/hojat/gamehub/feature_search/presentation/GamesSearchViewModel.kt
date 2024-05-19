@@ -2,7 +2,7 @@ package ca.hojat.gamehub.feature_search.presentation
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.games.GameUiModel
 import ca.hojat.gamehub.common_ui.widgets.games.GameUiModelMapper
 import ca.hojat.gamehub.common_ui.widgets.games.GamesUiState

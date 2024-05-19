@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import ca.hojat.gamehub.core.domain.entities.WebsiteCategory
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
 import com.google.accompanist.flowlayout.FlowRow
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.GameHubCard
 import ca.hojat.gamehub.feature_info.presentation.widgets.utils.InfoScreenSection
 import java.util.Locale

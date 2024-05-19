@@ -1,7 +1,7 @@
 package ca.hojat.gamehub.feature_article
 
 import androidx.lifecycle.SavedStateHandle
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.base.BaseViewModel
 import ca.hojat.gamehub.core.providers.StringProvider
 import dagger.hilt.android.lifecycle.HiltViewModel

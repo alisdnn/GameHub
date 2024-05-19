@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 
 @Composable
 fun lightColors(): Colors {

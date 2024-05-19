@@ -1,7 +1,7 @@
 package ca.hojat.gamehub.core.providers
 
 import android.content.Context
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import com.paulrybitskyi.hiltbinder.BindType
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject

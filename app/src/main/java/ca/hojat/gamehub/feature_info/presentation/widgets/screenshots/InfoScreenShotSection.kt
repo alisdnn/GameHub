@@ -15,7 +15,7 @@ import ca.hojat.gamehub.common_ui.images.defaultImageRequest
 import ca.hojat.gamehub.common_ui.images.secondaryImage
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
 import coil.compose.AsyncImage
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.GameHubCard
 import ca.hojat.gamehub.feature_info.presentation.widgets.utils.InfoScreenSectionWithInnerList
 

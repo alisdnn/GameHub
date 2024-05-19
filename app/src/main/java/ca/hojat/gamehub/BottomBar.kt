@@ -19,7 +19,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import ca.hojat.gamehub.common_ui.theme.GameHubTheme
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 
 private const val BOTTOM_BAR_ANIMATION_DURATION = 300
 

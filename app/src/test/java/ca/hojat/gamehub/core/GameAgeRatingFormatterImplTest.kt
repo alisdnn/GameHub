@@ -7,7 +7,7 @@ import ca.hojat.gamehub.core.domain.entities.AgeRating
 import ca.hojat.gamehub.core.domain.entities.AgeRatingCategory
 import ca.hojat.gamehub.core.domain.entities.AgeRatingType
 import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAME
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import org.junit.Before
 import org.junit.Test
 

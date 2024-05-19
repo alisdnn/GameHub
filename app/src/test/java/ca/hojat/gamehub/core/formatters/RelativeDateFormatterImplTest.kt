@@ -4,7 +4,7 @@ import ca.hojat.gamehub.core.providers.StringProvider
 import ca.hojat.gamehub.core.providers.TimeProvider
 import com.google.common.truth.Truth.assertThat
 import io.mockk.MockKAnnotations
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
 import org.junit.Before

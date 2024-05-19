@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.feature_settings.data.datastores
 
-import ca.on.hojat.gamenews.feature_settings.data.datastores.ProtoSettings
+import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettings
 import ca.hojat.gamehub.feature_settings.domain.DomainLanguage
 import ca.hojat.gamehub.feature_settings.domain.DomainSettings
 import ca.hojat.gamehub.feature_settings.domain.DomainTheme

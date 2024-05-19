@@ -1,7 +1,7 @@
 package ca.hojat.gamehub.core.data.auth.datastores.file
 
 import androidx.datastore.core.Serializer
-import ca.on.hojat.gamenews.core.data.auth.datastores.file.NewProtoOauthCredentials
+import ca.hojat.gamehub.core.data.auth.datastores.file.NewProtoOauthCredentials
 import java.io.InputStream
 import java.io.OutputStream
 

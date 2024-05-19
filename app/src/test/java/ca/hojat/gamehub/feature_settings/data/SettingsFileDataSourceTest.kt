@@ -2,7 +2,7 @@ package ca.hojat.gamehub.feature_settings.data
 
 import androidx.datastore.core.DataStore
 import ca.hojat.gamehub.feature_settings.DOMAIN_SETTINGS
-import ca.on.hojat.gamenews.feature_settings.data.datastores.ProtoSettings
+import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettings
 import com.google.common.truth.Truth.assertThat
 import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettingsMapper
 import ca.hojat.gamehub.feature_settings.data.datastores.SettingsFileDataSource

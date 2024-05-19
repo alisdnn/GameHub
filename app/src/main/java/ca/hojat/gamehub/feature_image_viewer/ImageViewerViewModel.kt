@@ -2,7 +2,7 @@ package ca.hojat.gamehub.feature_image_viewer
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.extensions.fromCsv
 import ca.hojat.gamehub.core.providers.StringProvider
 import ca.hojat.gamehub.common_ui.base.BaseViewModel

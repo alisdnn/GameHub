@@ -2,7 +2,7 @@ package ca.hojat.gamehub
 
 import android.app.Application
 import ca.hojat.gamehub.initializers.Initializer
-import ca.on.hojat.gamenews.BuildConfig
+import ca.hojat.gamehub.BuildConfig
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 import javax.inject.Inject

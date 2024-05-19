@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.core.providers
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.domain.entities.Website
 import ca.hojat.gamehub.core.domain.entities.WebsiteCategory
 import com.paulrybitskyi.hiltbinder.BindType

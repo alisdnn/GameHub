@@ -3,7 +3,7 @@ package ca.hojat.gamehub.feature_settings.data.di
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.dataStore
-import ca.on.hojat.gamenews.feature_settings.data.datastores.ProtoSettings
+import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettings
 import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettingsSerializer
 import dagger.Module
 import dagger.Provides

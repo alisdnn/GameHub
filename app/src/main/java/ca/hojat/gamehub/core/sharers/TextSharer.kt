@@ -2,7 +2,7 @@ package ca.hojat.gamehub.core.sharers
 
 import android.content.Context
 import android.content.Intent
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.providers.StringProvider
 import com.paulrybitskyi.hiltbinder.BindType
 import javax.inject.Inject

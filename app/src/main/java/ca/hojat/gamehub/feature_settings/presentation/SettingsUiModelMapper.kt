@@ -1,7 +1,7 @@
 package ca.hojat.gamehub.feature_settings.presentation
 
-import ca.on.hojat.gamenews.BuildConfig
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.BuildConfig
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.providers.StringProvider
 import ca.hojat.gamehub.core.providers.VersionNameProvider
 import ca.hojat.gamehub.feature_settings.domain.entities.Settings

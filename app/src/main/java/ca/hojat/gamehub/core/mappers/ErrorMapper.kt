@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.core.mappers
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.domain.entities.DomainException
 import ca.hojat.gamehub.core.domain.entities.Error
 import ca.hojat.gamehub.core.providers.StringProvider

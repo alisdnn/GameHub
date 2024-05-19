@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.feature_info.presentation.widgets.relatedgames.mappers
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.providers.StringProvider
 import ca.hojat.gamehub.feature_info.presentation.widgets.relatedgames.RelatedGameUiModel
 import ca.hojat.gamehub.feature_info.presentation.widgets.relatedgames.RelatedGamesType

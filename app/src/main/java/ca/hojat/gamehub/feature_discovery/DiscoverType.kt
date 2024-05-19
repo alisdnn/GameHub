@@ -1,6 +1,6 @@
 package ca.hojat.gamehub.feature_discovery
 
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.feature_discovery.di.DiscoverKey
 import ca.hojat.gamehub.feature_discovery.widgets.DiscoverScreen
 

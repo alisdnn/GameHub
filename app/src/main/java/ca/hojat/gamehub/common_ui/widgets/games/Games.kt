@@ -11,7 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.common_ui.widgets.AnimatedContentContainer
 import ca.hojat.gamehub.common_ui.widgets.FiniteUiState
 import ca.hojat.gamehub.common_ui.widgets.GameNewsProgressIndicator

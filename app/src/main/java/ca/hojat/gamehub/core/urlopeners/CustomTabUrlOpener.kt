@@ -5,7 +5,7 @@ import android.net.Uri
 import androidx.annotation.ColorRes
 import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
-import ca.on.hojat.gamenews.R
+import ca.hojat.gamehub.R
 import ca.hojat.gamehub.core.animations.WindowAnimations
 import ca.hojat.gamehub.core.extensions.attachNewTaskFlagIfNeeded
 import ca.hojat.gamehub.core.extensions.configuration
