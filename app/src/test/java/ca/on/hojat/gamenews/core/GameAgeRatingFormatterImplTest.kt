@@ -1,12 +1,12 @@
 package ca.on.hojat.gamenews.core
 
-import ca.on.hojat.gamenews.core.providers.StringProvider
-import ca.on.hojat.gamenews.core.formatters.GameAgeRatingFormatterImpl
+import ca.hojat.gamehub.core.providers.StringProvider
+import ca.hojat.gamehub.core.formatters.GameAgeRatingFormatterImpl
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.core.domain.entities.AgeRating
-import ca.on.hojat.gamenews.core.domain.entities.AgeRatingCategory
-import ca.on.hojat.gamenews.core.domain.entities.AgeRatingType
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAME
+import ca.hojat.gamehub.core.domain.entities.AgeRating
+import ca.hojat.gamehub.core.domain.entities.AgeRatingCategory
+import ca.hojat.gamehub.core.domain.entities.AgeRatingType
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAME
 import ca.on.hojat.gamenews.R
 import org.junit.Before
 import org.junit.Test

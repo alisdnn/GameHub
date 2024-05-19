@@ -1,11 +1,11 @@
 package ca.on.hojat.gamenews.core
 
-import ca.on.hojat.gamenews.core.extensions.toMillis
-import ca.on.hojat.gamenews.core.providers.TimeFormat
-import ca.on.hojat.gamenews.core.providers.TimeFormatProvider
-import ca.on.hojat.gamenews.core.providers.TimeProvider
-import ca.on.hojat.gamenews.core.formatters.ArticlePublicationDateFormatterImpl
-import ca.on.hojat.gamenews.core.formatters.RelativeDateFormatter
+import ca.hojat.gamehub.core.extensions.toMillis
+import ca.hojat.gamehub.core.providers.TimeFormat
+import ca.hojat.gamehub.core.providers.TimeFormatProvider
+import ca.hojat.gamehub.core.providers.TimeProvider
+import ca.hojat.gamehub.core.formatters.ArticlePublicationDateFormatterImpl
+import ca.hojat.gamehub.core.formatters.RelativeDateFormatter
 import com.google.common.truth.Truth.assertThat
 import io.mockk.MockKAnnotations
 import io.mockk.every

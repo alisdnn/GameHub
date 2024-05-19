@@ -1,15 +1,15 @@
 package ca.on.hojat.gamenews.core.data.games.database
 
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
-import ca.on.hojat.gamenews.core.common_testing.domain.PAGINATION
-import ca.on.hojat.gamenews.core.data.database.games.entities.DbGame
-import ca.on.hojat.gamenews.core.data.database.games.entities.DbLikedGame
-import ca.on.hojat.gamenews.core.data.database.games.tables.LikedGamesTable
-import ca.on.hojat.gamenews.core.data.games.datastores.DbGameMapper
-import ca.on.hojat.gamenews.core.data.games.datastores.LikedGameFactory
-import ca.on.hojat.gamenews.core.data.games.datastores.LikedGamesDatabaseDataSource
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.domain.PAGINATION
+import ca.hojat.gamehub.core.data.database.games.entities.DbGame
+import ca.hojat.gamehub.core.data.database.games.entities.DbLikedGame
+import ca.hojat.gamehub.core.data.database.games.tables.LikedGamesTable
+import ca.hojat.gamehub.core.data.games.datastores.DbGameMapper
+import ca.hojat.gamehub.core.data.games.datastores.LikedGameFactory
+import ca.hojat.gamehub.core.data.games.datastores.LikedGamesDatabaseDataSource
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf

@@ -1,11 +1,11 @@
 package ca.on.hojat.gamenews.core.data.auth.file
 
 import androidx.datastore.core.DataStore
-import ca.on.hojat.gamenews.core.data.auth.datastores.file.ProtoAuthMapper
-import ca.on.hojat.gamenews.core.providers.TimestampProvider
+import ca.hojat.gamehub.core.data.auth.datastores.file.ProtoAuthMapper
+import ca.hojat.gamehub.core.providers.TimestampProvider
 import ca.on.hojat.gamenews.core.data.DOMAIN_OAUTH_CREDENTIALS
-import ca.on.hojat.gamenews.core.data.auth.datastores.file.AuthExpiryTimeCalculator
-import ca.on.hojat.gamenews.core.data.auth.datastores.file.AuthFileDataStore
+import ca.hojat.gamehub.core.data.auth.datastores.file.AuthExpiryTimeCalculator
+import ca.hojat.gamehub.core.data.auth.datastores.file.AuthFileDataStore
 import ca.on.hojat.gamenews.core.data.auth.datastores.file.NewProtoOauthCredentials
 import com.google.common.truth.Truth.assertThat
 import io.mockk.MockKAnnotations

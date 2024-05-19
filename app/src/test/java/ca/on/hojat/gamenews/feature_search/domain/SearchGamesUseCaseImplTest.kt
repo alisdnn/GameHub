@@ -1,15 +1,17 @@
 package ca.on.hojat.gamenews.feature_search.domain
 
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.providers.NetworkStateProvider
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesRepository
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesLocalDataSource
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesRemoteDataSource
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_ERROR_UNKNOWN
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
-import ca.on.hojat.gamenews.core.common_testing.domain.PAGINATION
-import ca.on.hojat.gamenews.core.common_testing.domain.coVerifyNotCalled
+import ca.hojat.gamehub.core.providers.NetworkStateProvider
+import ca.hojat.gamehub.core.domain.games.repository.GamesRepository
+import ca.hojat.gamehub.core.domain.games.repository.GamesLocalDataSource
+import ca.hojat.gamehub.core.domain.games.repository.GamesRemoteDataSource
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_ERROR_UNKNOWN
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.domain.PAGINATION
+import ca.hojat.gamehub.core.common_testing.domain.coVerifyNotCalled
+import ca.hojat.gamehub.feature_search.domain.SearchGamesUseCase
+import ca.hojat.gamehub.feature_search.domain.SearchGamesUseCaseImpl
 import com.github.michaelbull.result.Err
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.get

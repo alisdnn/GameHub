@@ -2,21 +2,21 @@ package ca.on.hojat.gamenews.core.domain.games
 
 import app.cash.turbine.test
 import ca.on.hojat.gamenews.core.domain.REFRESH_GAMES_USE_CASE_PARAMS
-import ca.on.hojat.gamenews.core.domain.games.common.throttling.GamesRefreshingThrottler
-import ca.on.hojat.gamenews.core.domain.games.common.throttling.GamesRefreshingThrottlerTools
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesRepository
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesLocalDataSource
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesRemoteDataSource
-import ca.on.hojat.gamenews.core.domain.games.usecases.RefreshPopularGamesUseCaseImpl
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_ERROR_UNKNOWN
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
-import ca.on.hojat.gamenews.core.common_testing.domain.coVerifyNotCalled
+import ca.hojat.gamehub.core.domain.games.common.throttling.GamesRefreshingThrottler
+import ca.hojat.gamehub.core.domain.games.common.throttling.GamesRefreshingThrottlerTools
+import ca.hojat.gamehub.core.domain.games.repository.GamesRepository
+import ca.hojat.gamehub.core.domain.games.repository.GamesLocalDataSource
+import ca.hojat.gamehub.core.domain.games.repository.GamesRemoteDataSource
+import ca.hojat.gamehub.core.domain.games.usecases.RefreshPopularGamesUseCaseImpl
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_ERROR_UNKNOWN
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.domain.coVerifyNotCalled
 import com.github.michaelbull.result.Err
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.get
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.core.common_testing.domain.FakeGamesRefreshingThrottlerKeyProvider
+import ca.hojat.gamehub.core.common_testing.domain.FakeGamesRefreshingThrottlerKeyProvider
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -109,7 +109,9 @@ internal class RefreshPopularGamesUseCaseImplTest {
     fun `Does not save remote games into local data store when refresh is unsuccessful`() {
         runTest {
             coEvery { throttler.canRefreshGames(any()) } returns false
-            coEvery { gamesRemoteDataSource.getPopularGames(any()) } returns Err(DOMAIN_ERROR_UNKNOWN)
+            coEvery { gamesRemoteDataSource.getPopularGames(any()) } returns Err(
+                DOMAIN_ERROR_UNKNOWN
+            )
 
             sut.execute(REFRESH_GAMES_USE_CASE_PARAMS).firstOrNull()
 
@@ -144,7 +146,9 @@ internal class RefreshPopularGamesUseCaseImplTest {
     fun `Does not update games last refresh time when refresh is unsuccessful`() {
         runTest {
             coEvery { throttler.canRefreshGames(any()) } returns false
-            coEvery { gamesRemoteDataSource.getPopularGames(any()) } returns Err(DOMAIN_ERROR_UNKNOWN)
+            coEvery { gamesRemoteDataSource.getPopularGames(any()) } returns Err(
+                DOMAIN_ERROR_UNKNOWN
+            )
 
             sut.execute(REFRESH_GAMES_USE_CASE_PARAMS).firstOrNull()
 

@@ -2,8 +2,16 @@ package ca.on.hojat.gamenews.feature_image_viewer
 
 import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.common_testing.FakeStringProvider
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.FakeStringProvider
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.feature_image_viewer.ImageViewerCommand
+import ca.hojat.gamehub.feature_image_viewer.ImageViewerRoute
+import ca.hojat.gamehub.feature_image_viewer.ImageViewerViewModel
+import ca.hojat.gamehub.feature_image_viewer.KEY_SELECTED_POSITION
+import ca.hojat.gamehub.feature_image_viewer.PARAM_GAME_NAME
+import ca.hojat.gamehub.feature_image_viewer.PARAM_IMAGE_URLS
+import ca.hojat.gamehub.feature_image_viewer.PARAM_INITIAL_POSITION
+import ca.hojat.gamehub.feature_image_viewer.PARAM_TITLE
 import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk

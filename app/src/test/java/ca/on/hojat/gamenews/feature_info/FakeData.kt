@@ -1,18 +1,18 @@
 package ca.on.hojat.gamenews.feature_info
 
-import ca.on.hojat.gamenews.core.domain.entities.Company
-import ca.on.hojat.gamenews.core.domain.entities.InvolvedCompany
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAME
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.PAGINATION
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.RefreshSimilarGamesUseCase
-import ca.on.hojat.gamenews.feature_info.domain.entities.InfoScreenData
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetCompanyDevelopedGamesUseCase
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetGameUseCase
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetSimilarGamesUseCase
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.RefreshCompanyDevelopedGamesUseCase
-import ca.on.hojat.gamenews.feature_info.domain.usecases.likes.ObserveLikeStateUseCase
-import ca.on.hojat.gamenews.feature_info.domain.usecases.likes.ToggleLikeStateUseCase
+import ca.hojat.gamehub.core.domain.entities.Company
+import ca.hojat.gamehub.core.domain.entities.InvolvedCompany
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAME
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.PAGINATION
+import ca.hojat.gamehub.feature_info.domain.usecases.game.RefreshSimilarGamesUseCase
+import ca.hojat.gamehub.feature_info.domain.entities.InfoScreenData
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetCompanyDevelopedGamesUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetGameUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetSimilarGamesUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.game.RefreshCompanyDevelopedGamesUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.likes.ObserveLikeStateUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.likes.ToggleLikeStateUseCase
 
 private val COMPANY = Company(
     id = 1,

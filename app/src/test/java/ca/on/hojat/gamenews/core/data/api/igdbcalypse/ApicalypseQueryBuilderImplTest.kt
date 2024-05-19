@@ -1,7 +1,7 @@
 package ca.on.hojat.gamenews.core.data.api.igdbcalypse
 
-import ca.on.hojat.gamenews.core.data.api.igdbcalypse.querybuilder.ApicalypseQueryBuilderImpl
-import ca.on.hojat.gamenews.core.data.api.igdbcalypse.querybuilder.whereclause.WhereClauseBuilderFactory
+import ca.hojat.gamehub.core.data.api.igdbcalypse.querybuilder.ApicalypseQueryBuilderImpl
+import ca.hojat.gamehub.core.data.api.igdbcalypse.querybuilder.whereclause.WhereClauseBuilderFactory
 import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test

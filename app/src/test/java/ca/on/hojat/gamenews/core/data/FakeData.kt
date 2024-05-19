@@ -1,7 +1,7 @@
 package ca.on.hojat.gamenews.core.data
 
-import ca.on.hojat.gamenews.core.domain.auth.entities.OauthCredentials
-import ca.on.hojat.gamenews.core.domain.entities.Company
+import ca.hojat.gamehub.core.domain.auth.entities.OauthCredentials
+import ca.hojat.gamehub.core.domain.entities.Company
 
 internal val DOMAIN_OAUTH_CREDENTIALS = OauthCredentials(
     accessToken = "access_token",

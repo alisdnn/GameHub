@@ -1,7 +1,7 @@
 package ca.on.hojat.gamenews.core.data.api.igdb
 
-import ca.on.hojat.gamenews.core.data.api.igdb.auth.entities.ApiAuthorizationType
-import ca.on.hojat.gamenews.core.data.api.igdb.auth.Authorizer
+import ca.hojat.gamehub.core.data.api.igdb.auth.entities.ApiAuthorizationType
+import ca.hojat.gamehub.core.data.api.igdb.auth.Authorizer
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Before

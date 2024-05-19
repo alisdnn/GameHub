@@ -2,14 +2,14 @@ package ca.on.hojat.gamenews.feature_info.domain
 
 import app.cash.turbine.test
 import ca.on.hojat.gamenews.feature_info.GET_COMPANY_DEVELOPED_GAMES_USE_CASE_PARAMS
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesLocalDataSource
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.domain.games.repository.GamesLocalDataSource
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.get
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetCompanyDevelopedGamesUseCaseImpl
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.RefreshCompanyDevelopedGamesUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetCompanyDevelopedGamesUseCaseImpl
+import ca.hojat.gamehub.feature_info.domain.usecases.game.RefreshCompanyDevelopedGamesUseCase
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK

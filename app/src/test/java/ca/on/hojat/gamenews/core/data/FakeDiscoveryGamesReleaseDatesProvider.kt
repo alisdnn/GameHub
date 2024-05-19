@@ -1,6 +1,6 @@
 package ca.on.hojat.gamenews.core.data
 
-import ca.on.hojat.gamenews.core.data.games.common.DiscoveryGamesReleaseDatesProvider
+import ca.hojat.gamehub.core.data.games.common.DiscoveryGamesReleaseDatesProvider
 
 internal class FakeDiscoveryGamesReleaseDatesProvider : DiscoveryGamesReleaseDatesProvider {
     override fun getPopularGamesMinReleaseDate(): Long = 500L

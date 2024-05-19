@@ -1,8 +1,8 @@
 package ca.on.hojat.gamenews.core.data.api.igdb.extractors
 
-import ca.on.hojat.gamenews.core.data.api.igdb.common.errorextractors.CompositeErrorMessageExtractor
-import ca.on.hojat.gamenews.core.data.api.igdb.common.errorextractors.IgdbErrorMessageExtractor
-import ca.on.hojat.gamenews.core.data.api.igdb.common.errorextractors.TwitchErrorMessageExtractor
+import ca.hojat.gamehub.core.data.api.igdb.common.errorextractors.CompositeErrorMessageExtractor
+import ca.hojat.gamehub.core.data.api.igdb.common.errorextractors.IgdbErrorMessageExtractor
+import ca.hojat.gamehub.core.data.api.igdb.common.errorextractors.TwitchErrorMessageExtractor
 import com.google.common.truth.Truth.assertThat
 import kotlinx.serialization.json.Json
 import org.junit.Before

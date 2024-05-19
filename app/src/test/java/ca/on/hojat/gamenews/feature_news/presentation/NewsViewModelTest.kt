@@ -1,16 +1,18 @@
 package ca.on.hojat.gamenews.feature_news.presentation
 
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.common_ui.base.events.GeneralCommand
-import ca.on.hojat.gamenews.common_ui.widgets.FiniteUiState
-import ca.on.hojat.gamenews.core.common_testing.FakeErrorMapper
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.common_ui.base.events.GeneralCommand
+import ca.hojat.gamehub.common_ui.widgets.FiniteUiState
+import ca.hojat.gamehub.core.common_testing.FakeErrorMapper
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
 import ca.on.hojat.gamenews.feature_news.DOMAIN_ARTICLES
-import ca.on.hojat.gamenews.feature_news.domain.DomainArticle
-import ca.on.hojat.gamenews.feature_news.domain.usecases.ObserveArticlesUseCase
-import ca.on.hojat.gamenews.feature_news.domain.usecases.RefreshArticlesUseCase
-import ca.on.hojat.gamenews.feature_news.presentation.mapping.NewsItemUiModelMapper
-import ca.on.hojat.gamenews.feature_news.presentation.widgets.NewsItemUiModel
+import ca.hojat.gamehub.feature_news.domain.DomainArticle
+import ca.hojat.gamehub.feature_news.domain.usecases.ObserveArticlesUseCase
+import ca.hojat.gamehub.feature_news.domain.usecases.RefreshArticlesUseCase
+import ca.hojat.gamehub.feature_news.presentation.NewsScreenRoute
+import ca.hojat.gamehub.feature_news.presentation.NewsViewModel
+import ca.hojat.gamehub.feature_news.presentation.mapping.NewsItemUiModelMapper
+import ca.hojat.gamehub.feature_news.presentation.widgets.NewsItemUiModel
 import com.github.michaelbull.result.Ok
 import com.google.common.truth.Truth.assertThat
 import io.mockk.every

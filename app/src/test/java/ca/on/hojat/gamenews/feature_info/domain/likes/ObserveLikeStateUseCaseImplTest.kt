@@ -2,10 +2,10 @@ package ca.on.hojat.gamenews.feature_info.domain.likes
 
 import app.cash.turbine.test
 import ca.on.hojat.gamenews.feature_info.OBSERVE_GAME_LIKE_STATE_USE_CASE_PARAMS
-import ca.on.hojat.gamenews.core.domain.games.repository.LikedGamesLocalDataSource
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.domain.games.repository.LikedGamesLocalDataSource
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.feature_info.domain.usecases.likes.ObserveLikeStateUseCaseImpl
+import ca.hojat.gamehub.feature_info.domain.usecases.likes.ObserveLikeStateUseCaseImpl
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK

@@ -1,6 +1,10 @@
 package ca.on.hojat.gamenews.core.factories
 
-import ca.on.hojat.gamenews.core.domain.entities.Image
+import ca.hojat.gamehub.core.domain.entities.Image
+import ca.hojat.gamehub.core.factories.IgdbImageExtension
+import ca.hojat.gamehub.core.factories.IgdbImageSize
+import ca.hojat.gamehub.core.factories.IgdbImageUrlFactory
+import ca.hojat.gamehub.core.factories.IgdbImageUrlFactoryImpl
 import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test

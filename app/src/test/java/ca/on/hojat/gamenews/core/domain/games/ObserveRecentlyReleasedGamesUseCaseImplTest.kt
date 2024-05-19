@@ -1,11 +1,11 @@
 package ca.on.hojat.gamenews.core.domain.games
 
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.domain.games.common.ObserveUseCaseParams
-import ca.on.hojat.gamenews.core.domain.games.repository.GamesLocalDataSource
-import ca.on.hojat.gamenews.core.domain.games.usecases.ObserveRecentlyReleasedGamesUseCaseImpl
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.domain.games.common.ObserveUseCaseParams
+import ca.hojat.gamehub.core.domain.games.repository.GamesLocalDataSource
+import ca.hojat.gamehub.core.domain.games.usecases.ObserveRecentlyReleasedGamesUseCaseImpl
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
 import com.google.common.truth.Truth.assertThat
 import io.mockk.MockKAnnotations
 import io.mockk.every

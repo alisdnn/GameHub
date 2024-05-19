@@ -2,13 +2,13 @@ package ca.on.hojat.gamenews.feature_news.data
 
 import app.cash.turbine.test
 import ca.on.hojat.gamenews.feature_news.DOMAIN_ARTICLES
-import ca.on.hojat.gamenews.core.data.database.articles.ArticlesTable
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
-import ca.on.hojat.gamenews.core.common_testing.domain.PAGINATION
+import ca.hojat.gamehub.core.data.database.articles.ArticlesTable
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.domain.PAGINATION
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.feature_news.data.datastores.database.ArticlesDatabaseDataSource
-import ca.on.hojat.gamenews.feature_news.data.datastores.database.DbArticleMapper
-import ca.on.hojat.gamenews.feature_news.data.datastores.database.mapToDatabaseArticles
+import ca.hojat.gamehub.feature_news.data.datastores.database.ArticlesDatabaseDataSource
+import ca.hojat.gamehub.feature_news.data.datastores.database.DbArticleMapper
+import ca.hojat.gamehub.feature_news.data.datastores.database.mapToDatabaseArticles
 import io.mockk.MockKAnnotations
 import io.mockk.coVerify
 import io.mockk.every

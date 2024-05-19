@@ -2,8 +2,17 @@ package ca.on.hojat.gamenews.feature_article
 
 import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.common_testing.FakeStringProvider
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.FakeStringProvider
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.feature_article.ArticleCommand
+import ca.hojat.gamehub.feature_article.ArticleRoute
+import ca.hojat.gamehub.feature_article.ArticleViewModel
+import ca.hojat.gamehub.feature_article.PARAM_ARTICLE_URL
+import ca.hojat.gamehub.feature_article.PARAM_BODY
+import ca.hojat.gamehub.feature_article.PARAM_IMAGE_URL
+import ca.hojat.gamehub.feature_article.PARAM_LEDE
+import ca.hojat.gamehub.feature_article.PARAM_PUBLICATION_DATE
+import ca.hojat.gamehub.feature_article.PARAM_TITLE
 import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk

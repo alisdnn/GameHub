@@ -1,18 +1,18 @@
 package ca.on.hojat.gamenews.feature_info.domain
 
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.factories.ImageViewerGameUrlFactory
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAME
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.factories.ImageViewerGameUrlFactory
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAME
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.get
 import com.github.michaelbull.result.getError
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.feature_info.domain.entities.GameImageType
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetGameImageUrlsUseCase
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetGameImageUrlsUseCaseImpl
-import ca.on.hojat.gamenews.feature_info.domain.usecases.game.GetGameUseCase
-import ca.on.hojat.gamenews.core.domain.entities.Error
+import ca.hojat.gamehub.feature_info.domain.entities.GameImageType
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetGameImageUrlsUseCase
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetGameImageUrlsUseCaseImpl
+import ca.hojat.gamehub.feature_info.domain.usecases.game.GetGameUseCase
+import ca.hojat.gamehub.core.domain.entities.Error
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK

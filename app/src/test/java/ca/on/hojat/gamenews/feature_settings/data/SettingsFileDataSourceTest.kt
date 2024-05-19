@@ -4,8 +4,8 @@ import androidx.datastore.core.DataStore
 import ca.on.hojat.gamenews.feature_settings.DOMAIN_SETTINGS
 import ca.on.hojat.gamenews.feature_settings.data.datastores.ProtoSettings
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.feature_settings.data.datastores.ProtoSettingsMapper
-import ca.on.hojat.gamenews.feature_settings.data.datastores.SettingsFileDataSource
+import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettingsMapper
+import ca.hojat.gamehub.feature_settings.data.datastores.SettingsFileDataSource
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.coVerify

@@ -1,12 +1,12 @@
 package ca.on.hojat.gamenews.feature_info.domain.likes
 
 import ca.on.hojat.gamenews.feature_info.TOGGLE_GAME_LIKE_STATE_USE_CASE_PARAMS
-import ca.on.hojat.gamenews.core.domain.entities.Pagination
-import ca.on.hojat.gamenews.core.domain.games.repository.LikedGamesLocalDataSource
-import ca.on.hojat.gamenews.core.domain.entities.Game
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.domain.entities.Pagination
+import ca.hojat.gamehub.core.domain.games.repository.LikedGamesLocalDataSource
+import ca.hojat.gamehub.core.domain.entities.Game
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
 import com.google.common.truth.Truth.assertThat
-import ca.on.hojat.gamenews.feature_info.domain.usecases.likes.ToggleLikeStateUseCaseImpl
+import ca.hojat.gamehub.feature_info.domain.usecases.likes.ToggleLikeStateUseCaseImpl
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest

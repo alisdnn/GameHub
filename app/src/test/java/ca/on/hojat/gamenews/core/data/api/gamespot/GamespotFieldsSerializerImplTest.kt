@@ -1,8 +1,8 @@
 package ca.on.hojat.gamenews.core.data.api.gamespot
 
-import ca.on.hojat.gamenews.core.data.api.gamespot.common.serialization.Gamespot
-import ca.on.hojat.gamenews.core.data.api.gamespot.common.serialization.GamespotFieldsSerializer
-import ca.on.hojat.gamenews.core.data.api.gamespot.common.serialization.GamespotFieldsSerializerImpl
+import ca.hojat.gamehub.core.data.api.gamespot.common.serialization.Gamespot
+import ca.hojat.gamehub.core.data.api.gamespot.common.serialization.GamespotFieldsSerializer
+import ca.hojat.gamehub.core.data.api.gamespot.common.serialization.GamespotFieldsSerializerImpl
 import com.google.common.truth.Truth.assertThat
 import org.junit.Assert.assertThrows
 import org.junit.Before

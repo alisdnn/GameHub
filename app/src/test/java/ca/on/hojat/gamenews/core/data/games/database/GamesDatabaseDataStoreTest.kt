@@ -1,15 +1,15 @@
 package ca.on.hojat.gamenews.core.data.games.database
 
 import app.cash.turbine.test
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAME
-import ca.on.hojat.gamenews.core.common_testing.domain.DOMAIN_GAMES
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
-import ca.on.hojat.gamenews.core.common_testing.domain.PAGINATION
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAME
+import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.domain.PAGINATION
 import ca.on.hojat.gamenews.core.data.DOMAIN_COMPANY
 import ca.on.hojat.gamenews.core.data.FakeDiscoveryGamesReleaseDatesProvider
-import ca.on.hojat.gamenews.core.data.database.games.tables.GamesTable
-import ca.on.hojat.gamenews.core.data.games.datastores.DbGameMapper
-import ca.on.hojat.gamenews.core.data.games.datastores.GamesDatabaseDataSource
+import ca.hojat.gamehub.core.data.database.games.tables.GamesTable
+import ca.hojat.gamehub.core.data.games.datastores.DbGameMapper
+import ca.hojat.gamehub.core.data.games.datastores.GamesDatabaseDataSource
 import com.google.common.truth.Truth.assertThat
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery

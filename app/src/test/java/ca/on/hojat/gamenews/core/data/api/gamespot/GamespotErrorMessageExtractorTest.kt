@@ -1,6 +1,6 @@
 package ca.on.hojat.gamenews.core.data.api.gamespot
 
-import ca.on.hojat.gamenews.core.data.api.gamespot.common.GamespotErrorMessageExtractor
+import ca.hojat.gamehub.core.data.api.gamespot.common.GamespotErrorMessageExtractor
 import com.google.common.truth.Truth.assertThat
 import kotlinx.serialization.json.Json
 import org.junit.Before

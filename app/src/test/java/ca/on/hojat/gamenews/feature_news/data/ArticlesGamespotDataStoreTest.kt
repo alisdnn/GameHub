@@ -1,16 +1,16 @@
 package ca.on.hojat.gamenews.feature_news.data
 
-import ca.on.hojat.gamenews.core.common_testing.API_ERROR_HTTP
-import ca.on.hojat.gamenews.core.common_testing.API_ERROR_NETWORK
-import ca.on.hojat.gamenews.core.common_testing.API_ERROR_UNKNOWN
-import ca.on.hojat.gamenews.core.common_testing.domain.MainCoroutineRule
-import ca.on.hojat.gamenews.core.common_testing.domain.PAGINATION
-import ca.on.hojat.gamenews.core.data.api.ApiErrorMapper
-import ca.on.hojat.gamenews.core.data.api.gamespot.articles.ArticlesEndpoint
-import ca.on.hojat.gamenews.core.data.api.gamespot.articles.entities.ApiArticle
-import ca.on.hojat.gamenews.feature_news.data.datastores.gamespot.ArticlePublicationDateMapper
-import ca.on.hojat.gamenews.feature_news.data.datastores.gamespot.ArticlesGamespotDataSource
-import ca.on.hojat.gamenews.feature_news.data.datastores.gamespot.GamespotArticleMapper
+import ca.hojat.gamehub.core.common_testing.API_ERROR_HTTP
+import ca.hojat.gamehub.core.common_testing.API_ERROR_NETWORK
+import ca.hojat.gamehub.core.common_testing.API_ERROR_UNKNOWN
+import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
+import ca.hojat.gamehub.core.common_testing.domain.PAGINATION
+import ca.hojat.gamehub.core.data.api.ApiErrorMapper
+import ca.hojat.gamehub.core.data.api.gamespot.articles.ArticlesEndpoint
+import ca.hojat.gamehub.core.data.api.gamespot.articles.entities.ApiArticle
+import ca.hojat.gamehub.feature_news.data.datastores.gamespot.ArticlePublicationDateMapper
+import ca.hojat.gamehub.feature_news.data.datastores.gamespot.ArticlesGamespotDataSource
+import ca.hojat.gamehub.feature_news.data.datastores.gamespot.GamespotArticleMapper
 import com.github.michaelbull.result.Err
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.get

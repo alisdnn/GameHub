@@ -1196,7 +1196,7 @@
     </issue>
 
     <issue
-        errorLine1="          return new RoomOpenHelper.ValidationResult(false, &quot;games(ca.on.hojat.gamenews.core.data.database.games.entities.DbGame).\n&quot;"
+        errorLine1="          return new RoomOpenHelper.ValidationResult(false, &quot;games(ca.hojat.gamehub.core.data.database.games.entities.DbGame).\n&quot;"
         errorLine2="                 ^" id="RestrictedApi"
         message="ValidationResult can only be called from within the same library group prefix (referenced groupId=`androidx.room` with prefix androidx from groupId=`GameNews`)">
         <location column="18"
@@ -1342,7 +1342,7 @@
     </issue>
 
     <issue
-        errorLine1="          return new RoomOpenHelper.ValidationResult(false, &quot;liked_games(ca.on.hojat.gamenews.core.data.database.games.entities.DbLikedGame).\n&quot;"
+        errorLine1="          return new RoomOpenHelper.ValidationResult(false, &quot;liked_games(ca.hojat.gamehub.core.data.database.games.entities.DbLikedGame).\n&quot;"
         errorLine2="                 ^" id="RestrictedApi"
         message="ValidationResult can only be called from within the same library group prefix (referenced groupId=`androidx.room` with prefix androidx from groupId=`GameNews`)">
         <location column="18"
@@ -1568,7 +1568,7 @@
     </issue>
 
     <issue
-        errorLine1="          return new RoomOpenHelper.ValidationResult(false, &quot;articles(ca.on.hojat.gamenews.core.data.database.articles.DbArticle).\n&quot;"
+        errorLine1="          return new RoomOpenHelper.ValidationResult(false, &quot;articles(ca.hojat.gamehub.core.data.database.articles.DbArticle).\n&quot;"
         errorLine2="                 ^" id="RestrictedApi"
         message="ValidationResult can only be called from within the same library group prefix (referenced groupId=`androidx.room` with prefix androidx from groupId=`GameNews`)">
         <location column="18"
