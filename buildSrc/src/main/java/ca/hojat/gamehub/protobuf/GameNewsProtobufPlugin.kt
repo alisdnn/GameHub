@@ -1,4 +1,4 @@
-package ca.on.hojat.gamenews.protobuf
+package ca.hojat.gamehub.protobuf
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

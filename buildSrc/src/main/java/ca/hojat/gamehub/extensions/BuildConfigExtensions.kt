@@ -1,4 +1,4 @@
-package ca.on.hojat.gamenews.extensions
+package ca.hojat.gamehub.extensions
 
 import com.android.build.api.dsl.VariantDimension
 

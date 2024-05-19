@@ -1,5 +1,5 @@
-import ca.on.hojat.gamenews.extensions.property
-import ca.on.hojat.gamenews.extensions.stringField
+import ca.hojat.gamehub.extensions.property
+import ca.hojat.gamehub.extensions.stringField
 
 plugins {
     id(PLUGIN_ANDROID_APPLICATION)

@@ -1,4 +1,4 @@
-package ca.on.hojat.gamenews.android
+package ca.hojat.gamehub.android
 
 import com.android.build.gradle.BaseExtension
 import org.gradle.api.Plugin
