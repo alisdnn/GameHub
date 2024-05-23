@@ -22,6 +22,7 @@
         tools:ignore="Instantiatable,UnusedAttribute">
 
         <!-- See this https://stackoverflow.com/a/68899786/7015881 why tools:ignore is needed above -->
+        <meta-data android:name="android.app.lib_name" android:value="MIT License" />
 
         <activity
             android:name="ca.hojat.gamehub.MainActivity"
