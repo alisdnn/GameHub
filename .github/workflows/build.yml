@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ Hojat_Main_Branch ]
+    branches: [ main ]
   pull_request:
-    branches: [ Hojat_Main_Branch ]
+    branches: [ main ]
 
 jobs:
 
