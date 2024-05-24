@@ -44,6 +44,7 @@ object Tooling {
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
     const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion"
 
+    // Logging
     const val napier = "io.github.aakira:napier:2.6.1"
 }
 
