@@ -1,8 +1,13 @@
-# `Game Hub` Android app
+# `GameHub` Android app
 
-<a href='https://play.google.com/store/apps/details?id=ca.on.hojat.gamenews'><img src='/media/button-google-play.svg' alt='Get it on Google Play' height='45' /></a>
+----
+Right now, we're in the process of migrating this app from a native Android app,
+to a Kotlin Multiplatform app.
+Feel free to collaborate with us.
+----
 
-[![Build](https://github.com/hojat72elect/GameHub/actions/workflows/build.yml/badge.svg?branch=Hojat_Main_Branch)](https://github.com/hojat72elect/GameHub/actions/workflows/build.yml)
+
+[![Build](https://github.com/hojat72elect/GameHub/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/hojat72elect/GameHub/actions/workflows/build.yml)
 
 This is an Android client for <a href="https://www.igdb.com/">IGDB</a>
 and <a href="https://dev.twitch.tv/">Twitch</a> APIs for all the latest news and information about
