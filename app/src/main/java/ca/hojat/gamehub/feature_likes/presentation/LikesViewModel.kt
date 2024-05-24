@@ -29,7 +29,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 private const val SUBSEQUENT_EMISSION_DELAY = 500L
@@ -78,7 +78,7 @@ internal class LikesViewModel @Inject constructor(
             .flowOn(dispatcherProvider.computation)
             .map { games -> currentUiState.toSuccessState(games) }
             .onError {
-                Timber.e(it, "Failed to load liked games.")
+                Napier.e(it) { "Failed to load liked games." }
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
                 emit(currentUiState.toEmptyState())
             }

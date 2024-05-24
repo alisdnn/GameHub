@@ -90,8 +90,8 @@ dependencies {
     implementation(AndroidX.prefsDataStore)
     implementation(AndroidX.browser)
 
-    // Timber
-    implementation(Tooling.timber)
+    // Logging
+    implementation(Tooling.napier)
 
     // Jetpack compose + Accompanist
     implementation(Compose.ui)

@@ -5,7 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import ca.hojat.gamehub.core.extensions.attachNewTaskFlagIfNeeded
 import com.paulrybitskyi.hiltbinder.BindType
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 @BindType(withQualifier = true)
@@ -19,7 +19,7 @@ internal class BrowserUrlOpener @Inject constructor() : UrlOpener {
             context.startActivity(intent)
             true
         } catch (e: Exception) {
-            Timber.e(e)
+            Napier.e { e.toString() }
             false
         }
 

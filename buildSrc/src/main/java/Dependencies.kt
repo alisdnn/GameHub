@@ -44,7 +44,7 @@ object Tooling {
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
     const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion"
 
-    const val timber = "com.jakewharton.timber:timber:5.0.1"
+    const val napier = "io.github.aakira:napier:2.6.1"
 }
 
 /**

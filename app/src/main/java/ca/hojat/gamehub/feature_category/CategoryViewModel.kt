@@ -30,7 +30,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 private const val PARAM_CATEGORY = "category"
@@ -94,7 +94,7 @@ internal class CategoryViewModel @Inject constructor(
             .flowOn(dispatcherProvider.computation)
             .map { items -> currentUiState.toSuccessState(items) }
             .onError {
-                Timber.e(it, "Failed to observe ${categoryType.name} items.")
+                Napier.e(it){"Failed to observe ${categoryType.name} items."}
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
                 emit(currentUiState.toEmptyState())
             }
@@ -127,7 +127,7 @@ internal class CategoryViewModel @Inject constructor(
             .resultOrError()
             .map { currentUiState }
             .onError {
-                Timber.e(it, "Failed to refresh ${categoryType.name} games.")
+                Napier.e(it) { "Failed to refresh ${categoryType.name} games." }
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
             }
             .onStart {

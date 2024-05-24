@@ -133,6 +133,7 @@ https://user-images.githubusercontent.com/14782808/111520365-b187a880-8760-11eb-
           for testing Room migrations.
     - [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver) - A scriptable web
       server for testing HTTP clients.
+- [Napier](https://github.com/AAkira/Napier) - Kotlin Multiplatform logging library.
 - [Gradle's Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html) - Gradle’s Kotlin
   DSL is an alternative syntax to the Groovy DSL with an enhanced editing experience.
 - [buildSrc](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources)

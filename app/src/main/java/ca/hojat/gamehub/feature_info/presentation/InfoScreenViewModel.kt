@@ -33,7 +33,7 @@ import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 private const val PARAM_GAME_ID = "game-id"
@@ -80,7 +80,7 @@ internal class InfoScreenViewModel @Inject constructor(
             .flowOn(dispatcherProvider.computation)
             .map { game -> currentUiState.toSuccessState(game) }
             .onError {
-                Timber.e(it, "Failed to load game info data.")
+                Napier.e(it) { "Failed to load game info data." }
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
                 emit(currentUiState.toEmptyState())
             }
@@ -120,7 +120,7 @@ internal class InfoScreenViewModel @Inject constructor(
             )
                 .resultOrError()
                 .onError {
-                    Timber.e(it, "Failed to get the image urls of type = $imageType.")
+                    Napier.e(it) { "Failed to get the image urls of type = $imageType." }
                     dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
                 }
                 .collect { imageUrls ->

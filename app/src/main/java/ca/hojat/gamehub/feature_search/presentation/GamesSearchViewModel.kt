@@ -26,7 +26,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 import kotlin.properties.Delegates
 import kotlin.properties.ReadWriteProperty
@@ -157,7 +157,7 @@ internal class GamesSearchViewModel @Inject constructor(
                     )
                 }
                 .onError {
-                    Timber.e(it, "Failed to search games.")
+                    Napier.e(it) { "Failed to search games." }
                     dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
                     emit(createGamesEmptyUiState())
                 }

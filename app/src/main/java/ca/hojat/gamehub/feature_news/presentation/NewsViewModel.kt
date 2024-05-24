@@ -25,7 +25,7 @@ import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 private const val MAX_ARTICLE_COUNT = 100
@@ -74,7 +74,7 @@ internal class NewsViewModel @Inject constructor(
             .flowOn(dispatcherProvider.computation)
             .map { news -> currentUiState.toSuccessState(news) }
             .onError {
-                Timber.e(it, "Failed to load articles.")
+                Napier.e(it) { "Failed to load articles." }
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
                 emit(currentUiState.toEmptyState())
             }
@@ -88,7 +88,7 @@ internal class NewsViewModel @Inject constructor(
     }
 
     fun onNewsItemClicked(model: NewsItemUiModel) {
-        Timber.d("link to the article => ${model.siteDetailUrl}")
+        Napier.d { "link to the article => ${model.siteDetailUrl}" }
         navigateToArticleScreen(model)
     }
 
@@ -103,7 +103,7 @@ internal class NewsViewModel @Inject constructor(
             .resultOrError()
             .map { currentUiState }
             .onError {
-                Timber.e(it, "Failed to refresh articles.")
+                Napier.e(it) { "Failed to refresh articles." }
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
             }
             .onStart {

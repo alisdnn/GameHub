@@ -31,7 +31,7 @@ import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 /**
@@ -87,7 +87,7 @@ internal class DiscoverViewModel @Inject constructor(
             transform = { it.toList() }
         )
             .map { listOfItems -> currentItems.toSuccessState(listOfItems) }
-            .onError { Timber.e(it, "Failed to observe games.") }
+            .onError { Napier.e(it) { "Failed to observe games." } }
             .onStart { isObservingItems = true }
             .onCompletion { isObservingItems = false }
             .onEach { emittedItems -> _items.update { emittedItems } }
@@ -114,7 +114,7 @@ internal class DiscoverViewModel @Inject constructor(
         )
             .map { currentItems }
             .onError {
-                Timber.e(it, "Failed to refresh games.")
+                Napier.e(it) { "Failed to refresh games." }
                 dispatchCommand(GeneralCommand.ShowLongToast(errorMapper.mapToMessage(it)))
             }
             .onStart {

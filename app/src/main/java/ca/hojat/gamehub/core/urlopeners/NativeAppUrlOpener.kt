@@ -8,7 +8,7 @@ import ca.hojat.gamehub.core.extensions.attachNewTaskFlagIfNeeded
 import ca.hojat.gamehub.core.extensions.canUrlBeOpenedByNativeApp
 import ca.hojat.gamehub.core.extensions.getNativeAppPackageForUrl
 import com.paulrybitskyi.hiltbinder.BindType
-import timber.log.Timber
+import io.github.aakira.napier.Napier
 import javax.inject.Inject
 
 @BindType(withQualifier = true)
@@ -33,7 +33,7 @@ internal class NativeAppUrlOpener @Inject constructor() : UrlOpener {
             context.startActivity(intent)
             true
         } catch (throwable: Throwable) {
-            Timber.e(throwable, "Wasn't able to start a native app for showing URL")
+            Napier.e(throwable) { "Wasn't able to start a native app for showing URL" }
             false
         }
     }
