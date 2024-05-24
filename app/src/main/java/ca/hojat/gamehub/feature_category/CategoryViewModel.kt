@@ -12,7 +12,6 @@ import ca.hojat.gamehub.core.extensions.onError
 import ca.hojat.gamehub.core.extensions.resultOrError
 import ca.hojat.gamehub.core.mappers.ErrorMapper
 import ca.hojat.gamehub.core.providers.StringProvider
-import ca.hojat.gamehub.feature_category.di.CategoryKey
 import ca.hojat.gamehub.feature_category.widgets.CategoryItemModelMapper
 import ca.hojat.gamehub.feature_category.widgets.CategoryUiModel
 import ca.hojat.gamehub.feature_category.widgets.CategoryUiState
@@ -55,8 +54,8 @@ internal class CategoryViewModel @Inject constructor(
     private var observeUseCaseParams = ObserveUseCaseParams()
     private var refreshUseCaseParams = RefreshUseCaseParams()
 
-    private val categoryType: CategoryType
-    private val categoryKeyType: CategoryKey.Type
+    private val categoryType = CategoryType.valueOf(checkNotNull(savedStateHandle.get<String>(PARAM_CATEGORY)))
+    private val categoryKeyType = categoryType.toKeyType()
 
     private var observingJob: Job? = null
     private var refreshingJob: Job? = null
@@ -69,9 +68,6 @@ internal class CategoryViewModel @Inject constructor(
     val uiState: StateFlow<CategoryUiState> = _uiState.asStateFlow()
 
     init {
-        categoryType =
-            CategoryType.valueOf(checkNotNull(savedStateHandle.get<String>(PARAM_CATEGORY)))
-        categoryKeyType = categoryType.toKeyType()
 
         _uiState.update {
             it.copy(title = stringProvider.getString(categoryType.titleId))
@@ -184,7 +180,7 @@ internal class CategoryViewModel @Inject constructor(
 
     private suspend fun observeNewBatch() {
         observeUseCaseParams = observeUseCaseParams.copy(
-            observeUseCaseParams.pagination.nextLimit()
+            pagination = observeUseCaseParams.pagination.nextLimit()
         )
 
         observingJob?.cancelAndJoin()

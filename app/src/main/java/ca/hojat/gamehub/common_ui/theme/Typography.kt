@@ -57,6 +57,10 @@ private val SUBTITLE_3 = TextStyle(
     letterSpacing = 0.50.sp,
 )
 
+/**
+ * WARNING : I have no idea why linter considers this as a warning. This extension value has been used in
+ * various places. Do not remove it. Better to just disable the corresponding inspection in Android Studio.
+ */
 @Suppress("unused")
 val Typography.subtitle3: TextStyle
     get() = SUBTITLE_3

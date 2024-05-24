@@ -1,7 +1,5 @@
 package ca.hojat.gamehub.core.urlopeners
 
-import ca.hojat.gamehub.core.urlopeners.UrlOpener
-import ca.hojat.gamehub.core.urlopeners.UrlOpenerKey
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

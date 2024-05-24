@@ -30,7 +30,7 @@ internal data class InfoScreenUiModel(
         get() = screenshotModels.isNotEmpty()
 
     val hasSummary: Boolean
-        get() = ((summary != null) && summary.isNotBlank())
+        get() = summary.isNullOrBlank().not()
 
     val hasDetails: Boolean
         get() = (detailsModel != null)

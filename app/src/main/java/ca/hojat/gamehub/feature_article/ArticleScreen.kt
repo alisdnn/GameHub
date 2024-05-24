@@ -138,7 +138,7 @@ private fun ArticleScreenPreview() {
             uiState = ArticleUiState(
                 "https://www.hitc.com/static/uploads/2023/02/Destiny-2-Lightfall-release-date-downtime-countdown-pre-order-bonuses-300x172.jpg",
                 "Destiny 2 Sets New Concurrent Player Record On Steam As Lightfall Launches",
-                "More than 300,000 people played detsiny 2 at the same time today.",
+                "More than 300,000 people played destiny 2 at the same time today.",
                 "Feb 28, 2:07 p.m.",
                 "",
                 "The body goes here."

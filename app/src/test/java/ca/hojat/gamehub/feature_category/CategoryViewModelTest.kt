@@ -5,7 +5,6 @@ import app.cash.turbine.test
 import ca.hojat.gamehub.common_ui.base.events.GeneralCommand
 import ca.hojat.gamehub.common_ui.widgets.FiniteUiState
 import ca.hojat.gamehub.core.common_testing.FakeErrorMapper
-import ca.hojat.gamehub.core.common_testing.FakeLogger
 import ca.hojat.gamehub.core.common_testing.FakeStringProvider
 import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
 import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
@@ -36,7 +35,6 @@ internal class CategoryViewModelTest {
     private val observePopularGamesUseCase = mockk<ObservePopularGamesUseCase>(relaxed = true)
     private val refreshPopularGamesUseCase = mockk<RefreshPopularGamesUseCase>(relaxed = true)
 
-    private val logger = FakeLogger()
     private val sut by lazy {
         CategoryViewModel(
             savedStateHandle = setupSavedStateHandle(),

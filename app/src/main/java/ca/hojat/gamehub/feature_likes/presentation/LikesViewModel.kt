@@ -131,7 +131,7 @@ internal class LikesViewModel @Inject constructor(
         if (!hasMoreGamesToLoad) return
 
         observeUseCaseParams = observeUseCaseParams.copy(
-            observeUseCaseParams.pagination.nextLimit()
+            pagination = observeUseCaseParams.pagination.nextLimit()
         )
 
         viewModelScope.launch {

@@ -1,4 +1,4 @@
-@file:JvmName("ViewUtils") @file:Suppress("UNCHECKED_CAST", "TooManyFunctions")
+@file:JvmName("ViewUtils") @file:Suppress("TooManyFunctions")
 
 package ca.hojat.gamehub.core.extensions
 

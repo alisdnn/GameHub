@@ -1,12 +1,10 @@
 package ca.hojat.gamehub.feature_settings.data.datastores
 
 import androidx.datastore.core.Serializer
-import ca.hojat.gamehub.feature_settings.data.datastores.ProtoSettings
 import ca.hojat.gamehub.feature_settings.domain.DomainSettings
 import java.io.InputStream
 import java.io.OutputStream
 
-@Suppress("BlockingMethodInNonBlockingContext")
 internal object ProtoSettingsSerializer : Serializer<ProtoSettings> {
 
     override val defaultValue: ProtoSettings

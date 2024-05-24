@@ -10,7 +10,6 @@ import ca.hojat.gamehub.core.domain.games.usecases.RefreshComingSoonGamesUseCase
 import ca.hojat.gamehub.core.domain.games.usecases.RefreshMostAnticipatedGamesUseCase
 import ca.hojat.gamehub.core.domain.games.usecases.RefreshPopularGamesUseCase
 import ca.hojat.gamehub.core.domain.games.usecases.RefreshRecentlyReleasedGamesUseCase
-import ca.hojat.gamehub.feature_category.di.CategoryKey
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

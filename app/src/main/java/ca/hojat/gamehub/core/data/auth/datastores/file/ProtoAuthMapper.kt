@@ -1,6 +1,5 @@
 package ca.hojat.gamehub.core.data.auth.datastores.file
 
-import ca.hojat.gamehub.core.data.auth.datastores.file.NewProtoOauthCredentials
 import ca.hojat.gamehub.core.domain.auth.entities.OauthCredentials
 import javax.inject.Inject
 

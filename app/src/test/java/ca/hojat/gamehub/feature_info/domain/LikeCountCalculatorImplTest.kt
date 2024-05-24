@@ -2,7 +2,6 @@ package ca.hojat.gamehub.feature_info.domain
 
 import com.google.common.truth.Truth.assertThat
 import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAME
-import ca.hojat.gamehub.feature_info.domain.LikeCountCalculatorImpl
 import org.junit.Before
 import org.junit.Test
 

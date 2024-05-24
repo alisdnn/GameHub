@@ -6,9 +6,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import ca.hojat.gamehub.AppNavigation
-import ca.hojat.gamehub.BottomBar
-import ca.hojat.gamehub.currentDestinationAsState
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 
 @Preview

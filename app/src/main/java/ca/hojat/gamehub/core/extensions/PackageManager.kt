@@ -30,7 +30,7 @@ fun PackageManager.getNativeAppPackageForUrl(url: String): String? {
         it.activityInfo.packageName
     }
 
-    return resolvedSpecializedApps.subtract(resolvedGenericApps).firstOrNull()
+    return resolvedSpecializedApps.subtract(resolvedGenericApps.toSet()).firstOrNull()
 }
 
 /**

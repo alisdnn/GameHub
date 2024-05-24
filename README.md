@@ -60,14 +60,14 @@ https://user-images.githubusercontent.com/14782808/111520365-b187a880-8760-11eb-
 ### Screenshots
 
 <p>
-<img src="/media/screenshot1.png" width="32%"/>
-<img src="/media/screenshot2.png" width="32%"/>
-<img src="/media/screenshot3.png" width="32%"/>
-</p>
-<p>
-<img src="/media/screenshot4.png" width="32%"/>
-<img src="/media/screenshot5.png" width="32%"/>
-<img src="/media/screenshot6.png" width="32%"/>
+<img src="/media/screenshot1.png" width="32%" alt="An screen shot of the app"/>
+<img src="/media/screenshot2.png" width="32%" alt="An screen shot of the app"/>
+<img src="/media/screenshot3.png" width="32%" alt="An screen shot of the app"/>
+</p> 
+<p> 
+<img src="/media/screenshot4.png" width="32%" alt="An screen shot of the app"/>
+<img src="/media/screenshot5.png" width="32%" alt="An screen shot of the app"/>
+<img src="/media/screenshot6.png" width="32%" alt="An screen shot of the app"/>
 </p>
 
 ## Tech Stack

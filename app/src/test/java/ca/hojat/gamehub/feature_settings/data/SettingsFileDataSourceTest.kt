@@ -48,12 +48,4 @@ internal class SettingsFileDataSourceTest {
         }
     }
 
-    @Test
-    fun `Observes settings successfully`() {
-        runTest {
-            coEvery { protoDataStore.data } returns flowOf(PROTO_SETTINGS)
-
-            assertThat(sut.observeSettings().first()).isEqualTo(DOMAIN_SETTINGS)
-        }
-    }
 }

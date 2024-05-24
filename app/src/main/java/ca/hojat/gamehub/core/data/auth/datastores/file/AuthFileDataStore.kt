@@ -1,7 +1,6 @@
 package ca.hojat.gamehub.core.data.auth.datastores.file
 
 import androidx.datastore.core.DataStore
-import ca.hojat.gamehub.core.data.auth.datastores.file.NewProtoOauthCredentials
 import ca.hojat.gamehub.core.domain.auth.datastores.AuthLocalDataStore
 import ca.hojat.gamehub.core.domain.auth.entities.OauthCredentials
 import com.paulrybitskyi.hiltbinder.BindType

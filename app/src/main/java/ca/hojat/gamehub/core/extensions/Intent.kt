@@ -1,5 +1,4 @@
 @file:JvmName("IntentUtils")
-@file:Suppress("UNCHECKED_CAST")
 
 package ca.hojat.gamehub.core.extensions
 

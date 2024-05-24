@@ -5,7 +5,6 @@ import ca.hojat.gamehub.common_ui.widgets.FiniteUiState
 import ca.hojat.gamehub.common_ui.widgets.games.GameUiModel
 import ca.hojat.gamehub.common_ui.widgets.games.GameUiModelMapper
 import ca.hojat.gamehub.core.common_testing.FakeErrorMapper
-import ca.hojat.gamehub.core.common_testing.FakeLogger
 import ca.hojat.gamehub.core.common_testing.FakeStringProvider
 import ca.hojat.gamehub.core.common_testing.domain.DOMAIN_GAMES
 import ca.hojat.gamehub.core.common_testing.domain.MainCoroutineRule
@@ -29,7 +28,6 @@ internal class LikesViewModelTest {
 
     private val observeLikedGamesUseCase = mockk<ObserveLikedGamesUseCase>(relaxed = true)
 
-    private val logger = FakeLogger()
     private val sut by lazy {
         LikesViewModel(
             observeLikedGamesUseCase = observeLikedGamesUseCase,

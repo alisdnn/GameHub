@@ -1,6 +1,5 @@
 package ca.hojat.gamehub.core.data.database.games.entities
 
-import ca.hojat.gamehub.core.data.database.games.entities.DbCompany
 import kotlinx.serialization.Serializable
 
 @Serializable
